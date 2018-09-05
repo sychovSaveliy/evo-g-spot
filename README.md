@@ -1,5 +1,10 @@
 # GSpot
 
+-------------------------------------------------------------------------------
+# Design
+Ссылка на Google-диск с дизайном: https://drive.google.com/drive/folders/1qYr2syHKKjiMfDe2QGISxCzY2_7JZxwE?usp=sharing
+-------------------------------------------------------------------------------
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
 ## Development server

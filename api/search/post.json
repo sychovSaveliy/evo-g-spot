@@ -1,0 +1,81 @@
+{
+    "info": {},
+    "data": {
+        "recipe":[
+            {
+                "name": "Творожная запеканка с фруктами",
+                "id": 1,
+                "img": "./route/to/item/img",
+                "src": "./route/to/item/card",
+                "category": {
+                    "vegetarian": false,
+                    "children": true,
+                    "lowCalorie": true,
+                    "lenten": false,
+                    "diabetic": false
+                },
+                "attributes": {
+                    "foodIntake":{
+                        "breakfast": true,
+                        "lunch": false,
+                        "snack": false,
+                        "dinner": false
+                    }
+                },
+                "ingredient": {
+                    "list": [
+                        {
+                            "name": "Творог",
+                            "id": 1,
+                            "quantity": {
+                                "value": 200,
+                                "unit": "gram"
+                            }
+                        },
+                        {
+                            "name": "Яйца",
+                            "id": 2,
+                            "quantity": {
+                                "value": 3,
+                                "unit": "piece"
+                            }
+                        },
+                        {
+                            "name": "Манная крупа",
+                            "id": 3,
+                            "quantity": {
+                                "value": 100,
+                                "unit": "gram"
+                            }
+                        },
+                        {
+                            "name": "Сахар",
+                            "id": 4,
+                            "quantity": {
+                                "value": 150,
+                                "unit": "gram"
+                            }
+                        },
+                        {
+                            "name": "Курага",
+                            "id": 5,
+                            "quantity": {
+                                "value": 70,
+                                "unit": "gram"
+                            }
+                        }
+                    ]
+                },
+                "cookingTime": {
+                    "hour": 0,
+                    "min": 30
+                },
+                "cookingDifficulity": "light",
+                "description": {
+                    "short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                }
+            }
+        ]
+    }
+    
+}
