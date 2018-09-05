@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
 });
 
 app.route('/main')
-	.post($data.mainReq);
+	.get($data.mainReq);
 
 app.route('/search')
 	.post($data.searchReq);
