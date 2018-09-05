@@ -1,8 +1,30 @@
 {
     "info": {},
     "data": {
-        "recipe":[
+        "testimonials":[
             {
+                "user": "Иван Петров",
+                "social": {
+                    "facebook": "url/to/profile",
+                    "twitter": "url/to/profile",
+                    "google+": "url/to/profile"
+                }
+            }
+        ],
+        "recentPost":[
+            {
+                "name": "Заголовок статьи 1",
+                "id": 1,
+                "img": "./route/to/item/img",
+                "src": "./route/to/item/card",
+                "category": "Рецепты",
+                "date": "31.08.2018",
+                "description": "Разнообразный и богатый опыт начало повседневной работы по формированию позиции обеспечивает широкому участие в формировании модели развития.",
+                "social": {
+                    "facebook": "url/to/profile",
+                    "twitter": "url/to/profile",
+                    "google+": "url/to/profile"
+                }
             }
         ]
     }

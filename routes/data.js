@@ -27,14 +27,14 @@ function searchReq(req, res) {
 }
 
 function mainReq(req, res) {
-	// let path = pathConcat('api' + req.url + '/' + req.method.toLowerCase() + '.json');
+	let path = pathConcat('api' + req.url + '/' + req.method.toLowerCase() + '.json');
 
-	// console.log(path);
-	// let servicePromise = filereader(fs, path)
-	// .then((response) =>{
-	// 	console.log(response);
-	// 	res.json(response);
-	// })	
+	console.log(path);
+	let servicePromise = filereader(fs, path)
+	.then((response) =>{
+		console.log(response);
+		res.json(response);
+	})
 }
 
 module.exports = { searchReq, mainReq };
