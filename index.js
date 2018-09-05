@@ -1,7 +1,7 @@
 let express = require('express');
 let app = express();
 let bodyParser = require('body-parser');
-// let $data = require('./routes/data');
+let $data = require('./routes/data');
 let port = 5000;
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -17,6 +17,17 @@ app.use(function (req, res, next) {
 
 app.get('/', function (req, res) {
 	return res.json({ message: 'UI API!' });
+});
+
+app.route('/main')
+	.post($data.mainReq);
+
+app.route('/search')
+	.post($data.searchReq);
+
+app.get('/search', function(req, res) {
+	// res.redirect('/');
+	/* redirect to catalog group page in future */
 });
 
 app.listen(port);
