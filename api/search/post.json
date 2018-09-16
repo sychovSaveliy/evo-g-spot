@@ -7,20 +7,20 @@
                 "id": 1,
                 "img": "./route/to/item/img",
                 "src": "./route/to/item/card",
-                "category": {
-                    "vegetarian": false,
-                    "children": true,
-                    "lowCalorie": true,
-                    "lenten": false,
-                    "diabetic": false
-                },
+                "category": [
+                    "vegetarian",
+                    "children",
+                    "lowCalories",
+                    "lenten",
+                    "diabetic"
+                ],
                 "attributes": {
-                    "foodIntake":{
-                        "breakfast": true,
-                        "lunch": false,
-                        "snack": false,
-                        "dinner": false
-                    }
+                    "foodIntake":[
+                        "breakfast",
+                        "lunch",
+                        "snack",
+                        "dinner"
+                    ]
                 },
                 "ingredient": {
                     "list": [
