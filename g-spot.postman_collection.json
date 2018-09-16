@@ -1,0 +1,322 @@
+{
+	"variables": [],
+	"info": {
+		"name": "g-spot",
+		"_postman_id": "17f4057e-3700-b4fc-8054-6148b9c33188",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "health",
+			"request": {
+				"url": "localhost:5000",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "717e3d26-3275-45bb-8bd4-e27bdbbf23cb",
+					"name": "health",
+					"originalRequest": {
+						"url": "localhost:5000",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-credentials",
+							"key": "access-control-allow-credentials",
+							"value": "true",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"name": "access-control-allow-headers",
+							"key": "access-control-allow-headers",
+							"value": "X-Requested-With,content-type",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"name": "access-control-allow-methods",
+							"key": "access-control-allow-methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "21",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sun, 16 Sep 2018 11:11:34 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"15-aDuS6pixaW5EgyS93Thsm4lczTI\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Sun May 31 2020 12:11:29 GMT+0300 (Eastern European Summer Time)",
+							"hostOnly": true,
+							"httpOnly": false,
+							"domain": "localhost",
+							"path": "/",
+							"secure": false,
+							"session": false,
+							"value": "GA1.1.227336135.1519813331",
+							"key": "_ga"
+						},
+						{
+							"expires": "Sat Feb 26 2028 14:31:22 GMT+0200 (Eastern European Standard Time)",
+							"hostOnly": true,
+							"httpOnly": true,
+							"domain": "localhost",
+							"path": "/",
+							"secure": false,
+							"session": false,
+							"value": "be9e5f7e-9d0f-4830-a477-cb2675f7ea20",
+							"key": "Webstorm-1882a7f0"
+						},
+						{
+							"expires": "Mon Apr 03 2028 12:44:24 GMT+0300 (Eastern European Summer Time)",
+							"hostOnly": true,
+							"httpOnly": true,
+							"domain": "localhost",
+							"path": "/",
+							"secure": false,
+							"session": false,
+							"value": "8829e5c5-3a87-4fe0-976b-5f6e1e81669c",
+							"key": "Webstorm-3d09bf51"
+						},
+						{
+							"expires": "Invalid Date",
+							"hostOnly": true,
+							"httpOnly": true,
+							"domain": "localhost",
+							"path": "/",
+							"secure": false,
+							"session": true,
+							"value": "eh_4l4gdqJA9gODkAAAA",
+							"key": "io"
+						}
+					],
+					"responseTime": 34,
+					"body": "{\"message\":\"UI API!\"}"
+				}
+			]
+		},
+		{
+			"name": "/main",
+			"request": {
+				"url": "localhost:5000/main",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/search",
+			"request": {
+				"url": "localhost:5000/search",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"query\": \"Запеканка\",\n\t\"categoty\": null\n}"
+				},
+				"description": "query"
+			},
+			"response": [
+				{
+					"id": "98be4425-c23a-4333-91fd-db97e25dfa00",
+					"name": "/search",
+					"originalRequest": {
+						"url": "localhost:5000/search",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"query\": \"Запеканка\",\n\t\"categoty\": null\n}"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-credentials",
+							"key": "access-control-allow-credentials",
+							"value": "true",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"name": "access-control-allow-headers",
+							"key": "access-control-allow-headers",
+							"value": "X-Requested-With,content-type",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"name": "access-control-allow-methods",
+							"key": "access-control-allow-methods",
+							"value": "GET, POST, OPTIONS, PUT, PATCH, DELETE",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "825",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sun, 16 Sep 2018 11:09:24 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"339-6UBue9+kvOC+2wfV/bU9nE8z99w\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"hostOnly": true,
+							"httpOnly": false,
+							"domain": "localhost",
+							"path": "/",
+							"secure": false,
+							"session": false,
+							"value": "GA1.1.227336135.1519813331",
+							"key": "_ga"
+						},
+						{
+							"expires": "Invalid Date",
+							"hostOnly": true,
+							"httpOnly": true,
+							"domain": "localhost",
+							"path": "/",
+							"secure": false,
+							"session": false,
+							"value": "be9e5f7e-9d0f-4830-a477-cb2675f7ea20",
+							"key": "Webstorm-1882a7f0"
+						},
+						{
+							"expires": "Invalid Date",
+							"hostOnly": true,
+							"httpOnly": true,
+							"domain": "localhost",
+							"path": "/",
+							"secure": false,
+							"session": false,
+							"value": "8829e5c5-3a87-4fe0-976b-5f6e1e81669c",
+							"key": "Webstorm-3d09bf51"
+						},
+						{
+							"expires": "Invalid Date",
+							"hostOnly": true,
+							"httpOnly": true,
+							"domain": "localhost",
+							"path": "/",
+							"secure": false,
+							"session": true,
+							"value": "eh_4l4gdqJA9gODkAAAA",
+							"key": "io"
+						}
+					],
+					"responseTime": 77,
+					"body": "{\"info\":{},\"data\":{\"recipe\":[{\"name\":\"Творожная запеканка с фруктами\",\"id\":1,\"img\":\"./route/to/item/img\",\"src\":\"./route/to/item/card\",\"category\":[\"vegetarian\",\"children\",\"lowCalories\",\"lenten\",\"diabetic\"],\"attributes\":{\"foodIntake\":[\"breakfast\",\"lunch\",\"snack\",\"dinner\"]},\"ingredient\":{\"list\":[{\"name\":\"Творог\",\"id\":1,\"quantity\":{\"value\":200,\"unit\":\"gram\"}},{\"name\":\"Яйца\",\"id\":2,\"quantity\":{\"value\":3,\"unit\":\"piece\"}},{\"name\":\"Манная крупа\",\"id\":3,\"quantity\":{\"value\":100,\"unit\":\"gram\"}},{\"name\":\"Сахар\",\"id\":4,\"quantity\":{\"value\":150,\"unit\":\"gram\"}},{\"name\":\"Курага\",\"id\":5,\"quantity\":{\"value\":70,\"unit\":\"gram\"}}]},\"cookingTime\":{\"hour\":0,\"min\":30},\"cookingDifficulity\":\"light\",\"description\":{\"short\":\"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\"}}]}}"
+				}
+			]
+		}
+	]
+}
