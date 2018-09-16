@@ -5,6 +5,7 @@
   "author": "SychovSaveliy <savelii.sychov@gettyimages.com>",
   "private": true,
   "scripts": {
+    "mock": "node index.js",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js"
@@ -48,7 +49,10 @@
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "node-static": "^0.7.10",
+    "express": "4.16.2",
+    "body-parser": "1.18.2"
   },
   "engines": {
     "node": ">= 6.0.0",
