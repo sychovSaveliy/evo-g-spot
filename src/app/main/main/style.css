@@ -8,15 +8,14 @@ html, body {
 
 header {
   height: 160px;
-  background-image: url("../../img/bg1.png");
   display: flex;
   align-items: flex-start;
   padding-top: 30px;
-  background: linear-gradient(to right, #0cd49f, #8f7bb3); }
-  header .header_left {
-    width: 100px; }
+  background-image: url(../../img/bg1.png), linear-gradient(to right, #0cd49f, #8f7bb3); }
   header .buttons_top {
     margin-left: 20px; }
+    header .buttons_top img {
+      margin-left: 25px; }
     header .buttons_top .ButtonPurp {
       background-image: linear-gradient(to right, #996699, #666699);
       border: none;
@@ -48,7 +47,7 @@ header {
       border: 1px solid; }
 
 section {
-  background-image: linear-gradient(to right, #0cd49f, #8f7bb3), url("../../img/bg1.png");
+  background-image: url(../../img/bg1.png), linear-gradient(to right, #0cd49f, #8f7bb3);
   text-align: center;
   margin: 0 auto; }
   section #top_section__p {
@@ -90,29 +89,35 @@ section {
     color-font-size: 12px; }
 
 .wrapper {
-  width: 80%;
+  width: 55%;
   margin: 0 auto; }
 
 .main__about {
-  display: flex; }
-
-.about__left {
-  padding: 115px 0 115px 250px; }
-  .about__left h1 {
+  display: flex;
+  height: 670px; }
+  .main__about .about__left {
+    padding-top: 75px;
+    margin-right: 50px; }
+  .main__about h1 {
     display: inline-block;
     font-size: 44px;
     color: #f3f8f9; }
-  .about__left li {
-    padding: 0 0 60px 20px;
+  .main__about li {
+    padding: 0 0 50px 20px;
     color: #f3f8f9;
     display: list-item;
     text-align: left; }
-  .about__left button {
+  .main__about button {
     margin: 0 0 0 0;
     margin-left: -110px; }
 
 .about__right {
-  margin-left: 70px; }
+  margin-left: 60px;
+  position: relative; }
+  .about__right img {
+    z-index: 1;
+    position: absolute;
+    top: -25px; }
 
 .recipesec {
   background-image: none;
@@ -141,7 +146,8 @@ section {
   display: flex;
   border-radius: 4px; }
   .recipesec__cards .card {
-    margin-left: 30px; }
+    margin-left: 30px;
+    box-shadow: -3px 5px 34px 1px #efefef; }
   .recipesec__cards .recipesec__image {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
