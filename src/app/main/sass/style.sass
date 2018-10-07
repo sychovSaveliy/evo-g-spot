@@ -1,11 +1,7 @@
-
-
-
 $textColor: #f3f8f9;
 $marginLeft: 130px;
 $mainColor: #533a53;
    
-
 html, body
   margin: 0
   padding: 0
@@ -14,6 +10,28 @@ html, body
   font-size: 14px
   font-family: 'Poppins', sans-serif
 
+@mixin SB ($fontsize)
+    font-size: $fontsize
+    color: #9989AF
+    background-color: #FFFFFF
+    text-align: center
+    border-radius: 40px
+    padding: 4px 8px
+   
+.buttonLight1
+    background-color: #afdee6
+    width: 18px
+    display: inline-block
+    border-radius: 34px
+    padding: 8px 10px
+
+.buttonLight2
+    display: inline-block    
+    margin-bottom: 30px
+    width: 2%
+    background-color: #97d2dd
+    border-radius: 30px
+    padding: 13px 12px
 
 header
   height: 160px
@@ -21,13 +39,12 @@ header
   align-items: flex-start
   padding-top: 30px
   background-image: url(../../img/bg1.png), linear-gradient(to right, #0cd49f, #8f7bb3)
-	
 
   .buttons_top
   	margin-left: 20px
 	
   	img
-  		margin-left: 25px
+  		margin-left: 25px	
 
   	.ButtonPurp
   		background-image: linear-gradient(to right, #996699, #666699)
@@ -39,15 +56,12 @@ header
   		height: 40px
     width: 170px
 
-	
-
   .header_container
   	width: 90%
-  	margin: 0 auto;
+  	margin: 0 auto
   	justify-content: center
-  	display: flex;
-  	align-items: center;
-
+  	display: flex
+  	align-items: center
 
   	ul
   		display: flex
@@ -64,21 +78,21 @@ header
         text-transform: uppercase
         text-decoration: none
 
-  	#header__buttonright
-  		border: 1px solid
-  	
-
+  	span
+    	border: 2px solid white
+    	border-radius: 62px
+    	padding: 6px 20px 6px 20px
+		color: white
+		margin-left: 10px
 	
 section
 	background-image: url(../../img/bg1.png), linear-gradient(to right, #0cd49f, #8f7bb3)
 	text-align: center
 	margin: 0 auto;
 
-	#top_section__p
+	.top_section__p
 		color: $textColor
 		margin-top: 50px
-
-	
 
 .cardBlock
 	padding: 130px 0 80px 0
@@ -103,7 +117,6 @@ section
 	justify-content: space-around
 	margin-left: 430px
 	width: 60%
-
 
 	.bottomCard
 		position: relative
@@ -156,7 +169,6 @@ section
 		position: absolute
 		top: -25px
 
-
 .recipesec
 	background-image: none
 	width: 60%
@@ -169,7 +181,6 @@ section
 		align-items: center
 		justify-content: space-between
 		
-
 		h1
 			color: #663399
 			margin-left: 30px
@@ -182,9 +193,6 @@ section
 			width: 175px
 			border-radius: 35px
 			color: #663399
-			
-
-
 
 .recipesec__cards
 	padding-top: 70px
@@ -201,7 +209,6 @@ section
 		border-top-right-radius: 15px;
 		width: 345px
 		height: 250px
-
 
 .feedback
 	padding-top: 60px
@@ -235,13 +242,11 @@ section
 	.feedback__left
 		margin-right: 115px
 
-	
-
 footer
 	background-color: #533a53
 	height: 430px
 	
-	#footer__gspot
+	.footer__gspot
 		margin-left: 38px
 
 	p, li
@@ -261,8 +266,6 @@ footer
 		color: white
 		text-align: center	
 		padding-top: 100px
-		
-
 
 	.footer	
     	margin: 0 auto
@@ -276,16 +279,7 @@ footer
     	.footer__left
     		margin-top: 32px
 
+    		.f1
 
-	
-
- 
-
-  	
-
-
-
-
-
-
-
+    			i
+    				+SB(25px)
