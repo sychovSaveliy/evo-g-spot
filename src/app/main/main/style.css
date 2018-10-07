@@ -6,12 +6,29 @@ html, body {
   font-size: 14px;
   font-family: 'Poppins', sans-serif; }
 
+.buttonLight1 {
+  background-color: #afdee6;
+  width: 18px;
+  display: inline-block;
+  border-radius: 34px;
+  padding: 8px 10px; }
+
+.buttonLight2 {
+  display: inline-block;
+  margin-bottom: 30px;
+  width: 2%;
+  background-color: #97d2dd;
+  border-radius: 30px;
+  padding: 13px 12px; }
+
 header {
   height: 160px;
   display: flex;
   align-items: flex-start;
   padding-top: 30px;
-  background-image: url(../../img/bg1.png), linear-gradient(to right, #0cd49f, #8f7bb3); }
+  background-image: url(../../img/bg1.png), linear-gradient(to right, #0cd49f, #8f7bb3);
+  color: white;
+  margin-left: 10px; }
   header .buttons_top {
     margin-left: 20px; }
     header .buttons_top img {
@@ -43,14 +60,16 @@ header {
       color: #f3f8f9;
       text-transform: uppercase;
       text-decoration: none; }
-    header .header_container #header__buttonright {
-      border: 1px solid; }
+    header .header_container span {
+      border: 2px solid white;
+      border-radius: 62px;
+      padding: 6px 20px 6px 20px; }
 
 section {
   background-image: url(../../img/bg1.png), linear-gradient(to right, #0cd49f, #8f7bb3);
   text-align: center;
   margin: 0 auto; }
-  section #top_section__p {
+  section .top_section__p {
     color: #f3f8f9;
     margin-top: 50px; }
 
@@ -185,7 +204,7 @@ section {
 footer {
   background-color: #533a53;
   height: 430px; }
-  footer #footer__gspot {
+  footer .footer__gspot {
     margin-left: 38px; }
   footer p, footer li {
     color: white;
@@ -211,3 +230,10 @@ footer {
     padding-top: 82px; }
     footer .footer .footer__left {
       margin-top: 32px; }
+      footer .footer .footer__left .f1 i {
+        font-size: 25px;
+        color: #9989AF;
+        background-color: #FFFFFF;
+        text-align: center;
+        border-radius: 40px;
+        padding: 4px 8px; }
