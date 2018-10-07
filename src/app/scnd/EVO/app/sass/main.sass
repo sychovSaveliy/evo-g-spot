@@ -1,0 +1,137 @@
+*
+    box-sizing: border-box
+html 
+    width: 100%
+    
+body 
+    width: 100%
+    margin: 0px
+    padding: 0.1px
+
+//---------------------------------mixins and var---------------------------------
+@mixin flex ($fd, $jc, $ai)
+    display: flex
+    flex-direction: $fd
+    justify-content: $jc
+    align-items: $ai
+//flex box
+
+@mixin backSector($height)
+    background: no-repeat center center url(.././files/1.png), linear-gradient(to right, #0cd49f, #8f7bb3)
+    background-size: 100% 100%
+    height: $height
+//background fon
+
+@mixin SocialBut ($fontsize)
+    font-size: $fontsize
+    color: #9989AF
+    background-color: #FFFFFF
+    text-align: center
+    border-radius: 50px
+    padding: 6px 8px
+//social buttons
+
+$ff1: 'Raleway', sans-serif //fontfamily 1
+$ff2: 'Raleway', sans-serif //fontfamily 2
+$gradient: linear-gradient(to right, #9C82C0, #5B649F) //gradient buttons
+
+//---------------------------------B.E.M.---------------------------------
+.h1
+    font-size: 1.4em
+    font-family: $ff1
+// шаблон для заголовков
+.span
+    font-size: 0.8em
+    font-family: $ff2
+// шаблон для текста
+.empty
+
+.figcaption
+//пустой блок
+.button
+    font-family: $ff1
+    font-size: 15px
+    color: #FFFFFF
+    padding: 10px 45px
+    background: $gradient
+    border-radius: 25px
+    margin: 8px
+//шаблон для кнопки
+
+
+//---------------------------------body---------------------------------
+.container
+    padding: 0px
+    margin: 0px
+    height: 50vh
+    position: relative
+    .headContainer
+        +backSector(50vh)
+
+.recipesContainer
+    width: 100%
+    background-color: #F9F9F9
+    .recipes
+        width: 70%
+        margin: 0 auto
+        padding: 2em
+        position: absolute
+        top: 30px
+        left: 15%
+        .recTop
+            +flex(column,flex-start,center)
+            padding-top: 0em
+            padding-bottom: 5em
+            &__h1
+                color: #FFFFFF
+                padding: 0.5em
+                font-weight: 800
+                letter-spacing: 1px
+            .empty
+                &__span
+                    color: #FFFFFF
+                    padding: 0.5em
+                    font-size: 0.6em
+        .recBot
+            +flex(column,center,center)
+            background-color: #FFFFFF
+            border-radius: 12px
+            box-shadow: 0px 4px 25px -3px rgba(97,97,97,0.59)
+            &__empty
+                +flex(row,space-between,center)
+                .recMenuInfo
+                    +flex(row,space-between,center)
+                    width: 50%
+                    border-bottom: 1px solid #F0EFF5
+                    .imgInfo
+                        margin: 1em 0em 1em 1em
+                        width: 35%
+                        img
+                            width: 100%
+                            height: 50%
+                    &__empty
+                        +flex(column,space-between,flex-start)
+                        margin: 1em
+                        width: 65%
+                        .void
+                            margin: 0.5em
+                            &__h1
+                                margin: 0.5em 0em
+                                font-size: 1em
+                                color: #6E687C
+                            &__span
+                                font-size: 0.7em
+                                color: #A4A4A4
+                #brr
+                    border-right: 1px solid #F0EFF5
+           
+                        
+                    
+                        
+    
+
+
+
+
+    
+    
