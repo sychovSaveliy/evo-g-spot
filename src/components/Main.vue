@@ -1,27 +1,19 @@
 <template>
     <div id="mainComponent">
-        <Header></Header>
-        <Tag v-bind:bgColor="tagStatePrimary">Листья салата</Tag>
+        <IndexTitle></IndexTitle>
+        <IndexAdvantage></IndexAdvantage>
     </div>
 </template>
 
 <script>
-import Search from './MainComponents/Search';
-import Header from './MainComponents/Header';
-import Tag from './common/Tag';
+import IndexTitle from './MainComponents/Title';
+import IndexAdvantage from './MainComponents/Advantage';
 
 export default {
     name: 'mainComponent',
-    data: function() {
-        return {
-            title: 'Main Component',
-            tagStatePrimary: 'primary'
-        }
-    },
     components: {
-        Search,
-        Header,
-        Tag
+        IndexTitle,
+        IndexAdvantage
     }
 }
 </script>
