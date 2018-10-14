@@ -21,7 +21,7 @@ export default {
   },
   data(){
     return {
-      isPopupShow: true,
+      isPopupShow: false,
       title: 'Message'
     }
   },

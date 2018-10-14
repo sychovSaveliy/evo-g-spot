@@ -12,7 +12,8 @@
 					формировании позиции, занимаемых в отношении поставленых задач.
 				</p>
 			</div>
-			<button class="btn btn__color-default btn__lg">Создать свое меню</button>
+			<Button :classList="{ primary: true }">Создать свое меню</Button>
+			<!-- <button class="btn btn__color-default btn__lg"></button> -->
 		</div>
 		
 		<div class="title_scroll">
@@ -25,12 +26,14 @@
 <script>
 import Search from './Search';
 import Header from './Header';
+import Button from '../common/button';
 
 export default {
     name: 'mainTitle',
     components: {
         Search,
-        Header
+		Header,
+		Button
     }
 }
 </script>
