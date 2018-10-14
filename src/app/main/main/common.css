@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+  border: none;
+  margin: 0 15px 10px 0;
+  font: 500 12px/18px 'muller', sans-serif;
+  padding: 11px 50px;
+  border-radius: 100%;
+}
+
+.btn.btn_default {
+  color: #ffffff;
+  background: #7d5f9e;
+  background: -webkit-gradient(linear, left top, right top, from(#7d5f9e), to(#59649c));
+  background: linear-gradient(to right, #7d5f9e 0%, #59649c 100%);
+}
+/*# sourceMappingURL=common.css.map */

@@ -1,14 +1,8 @@
-$textColor: #f3f8f9;
-$marginLeft: 130px;
-$mainColor: #533a53;
-   
-html, body
-  margin: 0
-  padding: 0
-  height: 100%
-  min-height: 100%
-  font-size: 14px
-  font-family: 'Poppins', sans-serif
+@import "_fonts.sass"
+@import "_normalize.sass"
+@import "_common.sass"
+@import "_header.sass"
+@import "_footer.sass"
 
 @mixin SB ($fontsize)
     font-size: $fontsize
@@ -17,269 +11,322 @@ html, body
     text-align: center
     border-radius: 40px
     padding: 4px 8px
-   
-.buttonLight1
-    background-color: #afdee6
-    width: 18px
-    display: inline-block
-    border-radius: 34px
-    padding: 8px 10px
 
-.buttonLight2
-    display: inline-block    
-    margin-bottom: 30px
-    width: 2%
-    background-color: #97d2dd
-    border-radius: 30px
-    padding: 13px 12px
+/*#region X title ----------------------- */
 
-header
-  height: 160px
-  display: flex
-  align-items: flex-start
-  padding-top: 30px
-  background-image: url(../../img/bg1.png), linear-gradient(to right, #0cd49f, #8f7bb3)
-
-  .buttons_top
-  	margin-left: 20px
-	
-  	img
-  		margin-left: 25px	
-
-  	.ButtonPurp
-  		background-image: linear-gradient(to right, #996699, #666699)
-  		border: none
-  		border-radius: 20px
-  		margin-bottom: 5px
-  		color: $textColor
-  		font-size: 12px
-  		height: 40px
-    width: 170px
-
-  .header_container
-  	width: 90%
-  	margin: 0 auto
-  	justify-content: center
-  	display: flex
-  	align-items: center
-
-  	ul
-  		display: flex
-
-  	li
-  		list-style: none
-  		margin-left: 18px
-
-	  a
-        display: inline-block
-        margin-left: 40px
-        font-size: 12px
-        color: $textColor
-        text-transform: uppercase
-        text-decoration: none
-
-  	span
-    	border: 2px solid white
-    	border-radius: 62px
-    	padding: 6px 20px 6px 20px
-		color: white
-		margin-left: 10px
-	
-section
-	background-image: url(../../img/bg1.png), linear-gradient(to right, #0cd49f, #8f7bb3)
+.title
+	background-image: url(../../img/title-bg.png), linear-gradient(to right, #0cd49f, #8f7bb3)
 	text-align: center
-	margin: 0 auto;
-
-	.top_section__p
-		color: $textColor
-		margin-top: 50px
-
-.cardBlock
-	padding: 130px 0 80px 0
-	background-image: none
-
-	h3
-		margin-bottom: 80px
-		font-size: 44px
-		color: #533a53
-
-	h5
-		font-size: 18px
-	
-	p
-		font-size: 13px
-
-.topCard
-	justify-content: space-between
-
-.cardsContainer
 	display: flex
-	justify-content: space-around
-	margin-left: 430px
-	width: 60%
+	flex-direction: column
+	flex-wrap: nowrap
+	color: #ffffff
+	align-items: center
 
-	.bottomCard
+	.container
+		margin: auto
+
+	&.title_main
+		min-height: 100vh
 		position: relative
-		top: -20px
-			
-.ButtonPurp2
-	border: none
-	border-radius: 50px
-	height: 60px
-	margin: 40px 0 130px 0
-	width: 270px
-	background-image: linear-gradient(to right, #996699, #666699)
-	color: $textColor
-  	font-size: 12px
 
-.wrapper
-	width: 55%
-	margin: 0 auto
+	.title_scroll
+		margin: 0 0 30px
 
-.main__about
-	display: flex	
-	height: 670px
+		.icon-angle_down
+			display: block
+			width: 34px
+			height: 34px
+			border-radius: 100%
+			line-height: 36px
+			text-align: center
+			color: #ffffff
+			margin: 13px
+			font-size: 12px
+			background-color: rgba(255,255,255,.35)
+			box-shadow: 0 0 18px rgba(0,0,0,.1), 0 0 0 13px rgba(255,255,255,.2)
 
-	.about__left
-		padding-top: 75px
-		margin-right: 50px
+	.btn__color-default:hover
+		box-shadow: 0 5px 20px rgba(50,21,83,.2), 0 0 0 8px rgba(255,255,255,.2)
 
-	h1
-		display: inline-block
-		font-size: 44px
-		margin-bottom 20px
-		color: $textColor
+.title_content
 
-	li
-		padding: 0 0 50px 20px
-		color: $textColor
-		display: list-item	
+	.title_content_logo
+		display: block
+		margin: 0 auto 40px
+		max-width: 443px
+
+	.title_content_text
+		max-width: 730px
+		margin: 0 auto 33px
+		font-size: 16px
+		line-height: 22px
+
+/*#endregion X title -------------------- */
+
+/*#region X cards ----------------------- */
+
+.cards
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	padding: 40px 0 0
+
+	.cards_item
+		width: 33.333%
+		text-align: center
+		padding: 0 20px
+	
+	.cards_item_img
+		margin: 0 0 34px
+
+		img
+			display: block
+			height: 176px
+			margin: 0 auto
+
+	.cards_item_desc
+		max-width: 300px
+		margin: 0 auto
+
+		h3
+			font-size: 18px
+			line-height: 24px
+			color: #615876
+			margin: 0 0 20px
+
+		p
+			font: 13px/21px 'open_sans', sans-serif
+			margin: 0
+			color: #656565
+
+/*#endregion X cards -------------------- */
+
+/*#endregion X steps -------------------- */
+
+.steps__section
+	background-image: url(../../img/title-bg.png), linear-gradient(to right, #0cd49f, #8f7bb3)
+	color: #ffffff
+
+	&.title_section
+		padding: 0
+
+	.btn__color-default:hover
+		box-shadow: 0 5px 20px rgba(50,21,83,.2), 0 0 0 8px rgba(255,255,255,.2)
+
+.steps
+	display: flex
+	flex-direction: row
+	align-items: stretch
+
+.steps_item
+	width: 50%
+	position: relative
+	padding: 110px 0 135px
+
+	h2
+		color: #ffffff
 		text-align: left
 
-	button
-		margin: 0 0 0 0
-		margin-left: -110px
-
-.about__right
-	margin-left: 60px
-	position: relative
-
-	img
-		z-index: 1
+	.steps_item_img
 		position: absolute
-		top: -25px
+		height: 109%
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
 
-.recipesec
-	background-image: none
-	width: 60%
-	text-align: center
-	padding
+	ol
+		padding: 13px 0
+		margin: 0
+		list-style: none
+		counter-reset: number
 
-	.recipesec__top
-		display: flex
-		padding-top: 115px
-		align-items: center
-		justify-content: space-between
-		
-		h1
-			color: #663399
-			margin-left: 30px
-			font-size: 44px
+		li
+			margin: 0 0 36px
+			padding: 8px 0 0 78px
+			list-style-type: none
+			font-size: 16px
+			line-height: 17px
+			position: relative
+			min-height: 34px
 
-		button	
-			border: 1px solid #663399
-			background-color: white
-			height: 50px
-			width: 175px
-			border-radius: 35px
-			color: #663399
+		li::before
+			counter-increment: number
+			content: counter(number)
+			display: block
+			background-color: rgba(255,255,255,.35)
+			box-shadow: 0 0 18px rgba(0,0,0,.1), 0 0 0 13px rgba(255,255,255,.2)
+			width: 34px
+			height: 34px
+			line-height: 34px
+			font-size: 18px
+			font-weight: 500
+			text-align: center
+			border-radius: 100%
+			position: absolute
+			left: 13px
+			top: 0
 
-.recipesec__cards
-	padding-top: 70px
-	justify-content: space-between
+/*#region X steps ----------------------- */
+
+/*#region X posts ----------------------- */
+
+.post
 	display: flex
-	border-radius: 4px
+	align-items: stretch
+	margin: 67px -15px 0
+	padding: 0
+	list-style: none
 
-	.card
-		margin-left: 30px
-		box-shadow: -3px 5px 34px 1px #efefef
+	.post_item
+		margin: 0
+		padding: 0
+		list-style: none
+		width: 33.333%
+		padding: 0 15px
+		text-align: center
 
-	.recipesec__image
-		border-top-left-radius: 15px;
-		border-top-right-radius: 15px;
-		width: 345px
-		height: 250px
+		> a
+			display: block
+			border-radius: 20px
+			box-shadow: 0 10px 25px rgba(0,0,0,.18)
+			overflow: hidden
+			text-decoration: none
+
+			&:hover .post_item_img::before
+					background-color: rgba(255,255,255,.0)
+
+	.post_item_img
+		display: block
+		height: 253px
+		position: relative
+		overflow: hidden
+		margin: 0 0 34px
+
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			top: 0
+			right: 0
+			bottom: 0
+			background-color: rgba(255,255,255,.6)
+			z-index: 10
+			transition: background-color ease .2s
+
+		img
+			position: absolute
+			display: block
+			width: 100%
+			left: 50%
+			top: 50%
+			transform: translate(-50%,-50%)
+			transition: opacity ease .25s
+
+	.post_item_desc
+		display: flex
+		flex-direction: column
+		padding: 0 30px 40px
+
+	.post_item_title
+		display: block
+		font-size: 18px
+		line-height: 24px
+		color: #615876
+		margin: 0 0 20px
+		height: 48px
+		overflow: hidden
+		font-weight: 500
+		color: #615876
+
+	.post_item_p
+		display: block
+		font: 13px/21px 'open_sans', sans-serif
+		margin: 0 0 30px
+		color: #656565
+		max-height: 63px
+		overflow: hidden
+
+	.post_item_attr
+		display: block
+		margin: auto
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+		padding: 0 10px
+		border-radius: 25px
+		background-color: #edeefa
+		color: #656565
+		font-size: 0
+
+		span
+			display: inline-block
+			font: 13px/25px 'open_sans', sans-serif
+			padding: 0 10px
+			position: relative
+
+			&:not(:last-child)::after
+				content: '';
+				position: absolute
+				width: 1px
+				height: 13px
+				background-color: #656565
+				right: 0
+				top: 6px
+
+/*#endregion X posts -------------------- */
+
+/*#region X feedback -------------------- */
+
+.feedback_section
+	.container
+		position: relative
+
+		> h2
+			position: absolute
+			width: 60%
+			left: 40%
+			top: 105px
+			padding-left: 30px
+			text-align: left
 
 .feedback
-	padding-top: 60px
-	background-image: none
-	text-align: left
+	padding: 0
+	margin: 0
+	list-style: none
 
-.feedback_main
+.feedback_item
+	margin: 0
+	padding: 0
+	list-style: none
 	display: flex
-	justify-content: center
-	padding-bottom: 100px
+	align-items: flex-start
 
-	h1,
-		font-size: 44px
-		color: #663366
-		padding-top: 30px
-	
-	h6
-		font-size: 18px
-		color: #663366
-		margin: 45px 0 22px 0
-	
-	.feedback__button
-		border: 1px solid #663399
-		background-color: white
-		height: 50px
-		width: 240px
-		border-radius: 25px
-		color: #663399
-		margin-top: 50px
+	.feedback_item_img
+		width: 40%
+		padding: 0 45px 0 0
 
-	.feedback__left
-		margin-right: 115px
+		img
+			display: block
+			max-width: 100%
+			margin: 0 auto
 
-footer
-	background-color: #533a53
-	height: 430px
-	
-	.footer__gspot
-		margin-left: 38px
+	.feedback_item_content
+		width: 60%
+		padding: 182px 0 0 30px
 
-	p, li
-		color: white
-		font-size: 13px
-		list-style: none
+		h3
+			font-size: 18px
+			line-height: 24px
+			margin: 0 0 10px
+			font-weight: 500
+			color: #615876
 
-	li
-		margin-top: 18px	
+		p
+			font: 13px/21px 'open_sans', sans-serif
+			color: #656565
+			margin: 0 0 45px
 
-	h5
-		font-size: 16px
-		color: white	
 
-	h6
-		font-size: 11px
-		color: white
-		text-align: center	
-		padding-top: 100px
-
-	.footer	
-    	margin: 0 auto
-    	grid-column-gap: 2%
-    	width: 55%
-    	height: 145px
-    	display: grid
-    	grid-template-columns: 20% 15% 60%
-    	padding-top: 82px
-
-    	.footer__left
-    		margin-top: 32px
-
-    		.f1
-
-    			i
-    				+SB(25px)
+/*#endregion X feedback ----------------- */

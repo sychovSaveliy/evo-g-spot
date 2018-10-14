@@ -1,5 +1,6 @@
 <template>
     <div id="mainComponent">
+        <Header></Header>
         <Tag v-bind:bgColor="tagStatePrimary">Листья салата</Tag>
     </div>
 </template>
