@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'button',
+    name: 'app-button',
     props: {
         title: String,
         onClick: Function,
@@ -48,5 +48,32 @@ export default {
 
         &:hover
             box-shadow: 0 5px 20px rgba(50,21,83,.2), 0 0 0 8px rgba(50,21,83,.2)
+
+    &.secondary
+        background: none
+        box-shadow: inset 0 0 0 2px #9589b0
+        transition: color ease .2s
+
+        &:hover
+            background: linear-gradient(to right, rgba(125,95,158,1) 0%,rgba(89,100,156,1) 100%)
+            box-shadow: none
+            color: #fff
+
+        &.light
+            box-shadow: inset 0 0 0 2px #fff
+            color: #fff
+
+            &:hover
+                background: rgba(255,255,255,.95)
+                color: #9589b0
+
+    &.button__lg
+        font: 500 13px/20px 'muller', sans-serif
+        padding: 20px 60px
+        border-radius: 30px
+
+    &.button__md
+        padding: 16px 50px
+        border-radius: 25px
     
 </style>

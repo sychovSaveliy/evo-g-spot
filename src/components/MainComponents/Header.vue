@@ -54,8 +54,8 @@
 
             </nav>
             <div class="header_right">
-                <button class="btn btn__color-default">Создать меню</button>
-                <button class="btn btn__color-transparent">Вход</button>
+                <app-button :classList="{ primary: true }">Создать меню</app-button>
+				<app-button :classList="{ secondary: true, 'light': true }">Вход</app-button>
                 <span class="search_btn icon-search"></span>
             </div>
             <div class="header_search">
@@ -70,8 +70,13 @@
 
 
 <script>
+import Button from '../common/button';
+
 export default {
-    name: 'main.header'
+	name: 'mainHeader',
+	components: {
+		'app-button': Button
+	}
 }
 </script>
 

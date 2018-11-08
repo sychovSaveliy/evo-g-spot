@@ -5,7 +5,7 @@
             <div class="adv-heading">
                 <h2>Последние статьи</h2>
                 <div class="adv-heading_cotrols">
-                    <Button :classList="{ primary: true }">Все статьи</Button>
+                    <app-button :classList="{ secondary: true, button__md: true }">Все статьи</app-button>
                 </div>
             </div>
             
@@ -85,7 +85,7 @@ import Button from '../common/button';
 export default {
     name: "mainRecentPost",
     components: {
-        Button
+        'app-button' : Button
     }
 }
 </script>

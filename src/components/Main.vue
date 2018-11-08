@@ -1,5 +1,6 @@
 <template>
     <div id="mainComponent">
+        <!-- header inserted in IndexTitle -->
         <IndexTitle></IndexTitle>
         <IndexAdvantage></IndexAdvantage>
         <HowItWorks></HowItWorks>

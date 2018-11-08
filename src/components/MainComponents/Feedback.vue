@@ -15,7 +15,7 @@
                             особенности же консультация с широким активом представляет собой
                             интересный эксперимент проверки новых предложений.
                         </p>
-                        <Button :classList="{ primary: true }">Открыть профиль</Button>
+                        <app-button :classList="{ primary: true, button__md: true }">Открыть профиль</app-button>
                     </div>
                 </li>
             </ul>
@@ -29,7 +29,7 @@ import Button from '../common/button';
 export default {
     name: 'mainFeedback',
     components: {
-        Button
+        'app-button': Button
     }
 }
 </script>

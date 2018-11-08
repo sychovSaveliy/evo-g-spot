@@ -12,7 +12,7 @@
 					формировании позиции, занимаемых в отношении поставленых задач.
 				</p>
 			</div>
-			<Button :classList="{ primary: true }">Создать свое меню</Button>
+			<app-button :classList="{ primary: true, button__lg: true }">Создать свое меню</app-button>
 			<!-- <button class="btn btn__color-default btn__lg"></button> -->
 		</div>
 		
@@ -33,7 +33,7 @@ export default {
     components: {
         Search,
 		Header,
-		Button
+		'app-button': Button
     }
 }
 </script>

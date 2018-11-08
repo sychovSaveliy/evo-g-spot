@@ -11,7 +11,7 @@
                         <li>Получи подробный список ингредиентов для покупки</li>
                         <li>Узнай, где можно приобрести выбранные товары</li>
                     </ol>
-                    <Button :classList="{ primary: true }">Создать свое меню</Button>
+                    <app-button :classList="{ primary: true, button__lg: true }">Создать свое меню</app-button>
                 </div>
                 <div class="steps_item">
                     <img class="steps_item_img" :src="'static/img/aboutpic.png'" alt="image">
@@ -27,7 +27,7 @@ import Button from '../common/button';
 export default {
     name: 'mainSteps',
     components: {
-        Button
+        'app-button': Button
     }
 }
 </script>
