@@ -1,5 +1,5 @@
 <template>
-    <div class="header_catalog">
+    <div class="header_catalog" @click.stop="">
         <div class="header_catalog_tabs">
             <span class="active">По категориям</span>
             <span>По приемам пищи</span>
