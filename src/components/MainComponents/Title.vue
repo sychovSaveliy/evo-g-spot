@@ -16,7 +16,7 @@
 			<!-- <button class="btn btn__color-default btn__lg"></button> -->
 		</div>
 		
-		<div class="title_scroll">
+		<div class="title_scroll" @click="scrollDown">
 			<i class="icon-angle_down"></i>
 		</div>
 		
@@ -25,7 +25,7 @@
 
 <script>
 import Search from './Search';
-import Header from './Header';
+import Header from '../common/Header/Header';
 import Button from '../common/button';
 
 export default {
@@ -34,7 +34,12 @@ export default {
         Search,
 		Header,
 		'app-button': Button
-    }
+	},
+	methods: {
+		scrollDown(){
+			document.body.scrollTop = window.innerHeight
+		}
+	}
 }
 </script>
 
@@ -58,6 +63,7 @@ export default {
 
 	.title_scroll
 		margin: 0 0 30px
+		cursor: pointer
 
 		.icon-angle_down
 			display: block
